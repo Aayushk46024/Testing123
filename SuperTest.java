@@ -8,9 +8,17 @@ class Dog extends Animal{
         System.out.println(super.color);
     }
 }
+class Cat extends Dog{
+    String color = "Blue";
+    void printColor1(){
+        System.out.println(color);
+        System.out.println(super.color);
+    }
+}
 public class SuperTest {
     public static void main(String[] args){
-        Dog d1 = new Dog();
+        Cat d1 = new Cat();
         d1.printColor();
+        d1.printColor1();
     }
 }
